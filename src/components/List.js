@@ -1,7 +1,7 @@
 import React from 'react';
 
-function List(){
-    const itemList = ["collect DSA books","buy whiteboard","start studying"];
+function List(props){
+    const { itemList } = props;
     return (
         itemList.map((item)=>(
             <p>{item}</p>
